@@ -1,2 +1,2 @@
-# window_app
+# Window App
 A flask window  app integrated with PyQt 
