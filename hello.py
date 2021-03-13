@@ -40,7 +40,7 @@ def about():
 def ui(location):
     qt_app = QApplication(sys.argv)
     web = QWebEngineView()
-    web.setWindowTitle("QA Automation App")
+    web.setWindowTitle("Automation App")
     web.resize(900, 800)
     web.setZoomFactor(1.5)
     web.load(QUrl(location))
