@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>QA Automation App</h1>
+    {% for d in data %}
+        <h2>{{ d.Database_Name }} and {{ d.table_name }}</h2>
+        <p>row_count:  {{ d.row_count }}</p>
+        {% for i in d.primary_keys_columns %}
+            <p>Is having primary key: {{ i }}</p>
+        {% endfor %}
+    {% endfor %}
+{% endblock content %}
