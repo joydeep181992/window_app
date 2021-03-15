@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QApplication
 from threading import Timer
 import sys
 
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 data = [
@@ -48,5 +48,5 @@ def ui(location):
     sys.exit(qt_app.exec_())
 
 if __name__ == "__main__":
-    # Timer(1, lambda: ui("http://127.0.0.1:5000/")).start()
-    app.run(debug=True)
+    Timer(1, lambda: ui("http://127.0.0.1:5000/")).start()
+    app.run(debug=False)

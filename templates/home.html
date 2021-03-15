@@ -2,11 +2,17 @@
 
 {% block content %}
     <h1>Automation App</h1>
-    {% for d in data %}
-        <h2>{{ d.Database_Name }} and {{ d.table_name }}</h2>
-        <p>row_count:  {{ d.row_count }}</p>
-        {% for i in d.primary_keys_columns %}
-            <p>Is having primary key: {{ i }}</p>
-        {% endfor %}
-    {% endfor %}
+    <article class="media content-section">
+        <div class="media-body">
+            <div class="article-metadata">
+                {% for d in data %}
+                    <h2>{{ d.Database_Name }} and {{ d.table_name }}</h2>
+                    <p class="text-muted">row_count:  {{ d.row_count }}</p>
+                    {% for i in d.primary_keys_columns %}
+                        <p>Is having primary key: {{ i }}</p>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+    </article>
 {% endblock content %}
