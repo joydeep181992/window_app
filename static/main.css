@@ -1,9 +1,20 @@
 body {
     margin: 0;
     padding: 0;
+    font: 16px "Open Sans",sans-serif;
+    background: blue url('../static/images/rk.png') repeat-y top ;
 }
 
 h1,h2,h3,h4 {
-   font-family: Georgia, 'Times New Roman', Times, serif; 
-   /* color: red; */
+   font-family: "Open Sans",sans-serif; 
+   color: #fff;
+}
+
+.logo {
+    height: 32px;
+    width: 100%;
+}
+.nav__logo-link {
+    display: block;
+    padding: 15px 116px 15px 0;
 }
